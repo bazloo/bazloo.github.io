@@ -1,0 +1,19 @@
+.text {
+    display: block;
+    position: relative;
+    height: 50%;
+    width: 90%;
+    
+    background-color: rgb(174, 254, 255);
+    margin: 5% auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.author{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

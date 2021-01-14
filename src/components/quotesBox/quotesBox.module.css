@@ -1,0 +1,19 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 28vh;
+    font-size: 1.5vw;
+    width: 45vw;
+    height: 18vw;
+    background-color: darkgrey;
+    margin: auto;
+    opacity: 90%;
+}
+
+.btnWrapper{
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    
+}
