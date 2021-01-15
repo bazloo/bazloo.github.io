@@ -2,11 +2,12 @@ import React from 'react';
 import style from './textArea.module.css';
 
 const TextArea = (props) =>{
+    debugger;
     return (
         <div className={style.text}>
-            here will be some quote
+            {props.content ? props.content : "waiting for quote..."}
             <span id="author" className={style.author}>
-                author's name
+                {props.author ? props.author: "..."}
             </span>
         </div>
     );

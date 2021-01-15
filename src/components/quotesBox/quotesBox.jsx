@@ -4,16 +4,13 @@ import TextArea from '../textArea/textArea.jsx';
 import style from './quotesBox.module.css';
 
 const QuotesBox = (props) => {
-
-    //temporary variables for visualization of button's title
-    let newQ = 'New qoute';
-    let tweetQ = 'Tweet quote'
+        
     return (
         <div className={style.wrapper}>
-            <TextArea />
+            <TextArea author={props.newQuote.newQuote.author} content={props.newQuote.newQuote.content}/>
             <div className={style.btnWrapper}>
-                <Button title={newQ} />
-                <Button title={tweetQ} />
+                <Button getNewQuote={props.getNewQuote} />
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank"className={style.btn} data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
     );

@@ -3,12 +3,12 @@
     position: relative;
     height: 50%;
     width: 90%;
-    
+    font-size: 40px;
     background-color: rgb(174, 254, 255);
     margin: 5% auto;
     text-align: center;
-    font-size: 20px;
-    line-height: 20px;
+    
+    
 }
 
 .author{
@@ -16,4 +16,5 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    font-size: 40px;
 }

@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import QuotesBox from './components/quotesBox/quotesBox';
+import QuotesBoxContainer from './components/quotesBox/quotesBox-container';
+
 
 
 function App() {
   return (  
-    <QuotesBox />
+    <QuotesBoxContainer />
   );
 }
 
