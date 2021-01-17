@@ -1,4 +1,5 @@
 .btn{
+    z-index: 2;
     font-size: 1.5vw;
     line-height: 2.5vw;
     display: inline-block;
@@ -8,8 +9,11 @@
     align-items: flex-start;
     cursor: default;
     background-color: rgb(239, 239, 239);
-    margin-left: 1vw;
-    border-width: 2px;
-    border-style: outset;
-    border-color:  rgb(133, 133, 133);
+    margin: auto 1vw;
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px grey;
+}
+.btn:hover{
+    transform: scale(0.99);
+    box-shadow: 1px 2px 4px rgb(26, 25, 25);
 }

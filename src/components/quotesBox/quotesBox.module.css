@@ -4,21 +4,29 @@
     flex-direction: column;
     top: 28vh;
     font-size: 1.5vw;
-    width: 45vw;
-    height: 18vw;
-    background-color: darkgrey;
+    width: 45.5vw;
+    
+    font-family: 'Ubuntu', sans-serif;
     margin: auto;
-    opacity: 90%;
+    opacity: 80%;
     font-size: 1.5vw;
+    border: 1vw solid rgba(206, 190, 177, 0.849);
+    border-radius: 2vw;
+    z-index: 1;
+    background:linear-gradient(45deg, teal,rgba(172, 217, 231, 0.089) );
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px); 
 }
+
 
 .btnWrapper{
     text-align: center;
     height: fit-content;
     width: 100%;
-    
+    margin-bottom: 1.5vw;
 }
 .btn{
+    z-index: 2;
     font-size: 1.5vw;
     line-height: 2.5vw;
     display: inline-block;
@@ -28,8 +36,11 @@
     align-items: flex-start;
     cursor: default;
     background-color: rgb(239, 239, 239);
-    margin-left: 1vw;
-    border-width: 2px;
-    border-style: outset;
-    border-color:  rgb(133, 133, 133);
+    margin: auto 1vw;
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px grey;
+}
+.btn:hover{
+    transform: scale(0.99);
+    box-shadow: 1px 2px 4px rgb(26, 25, 25);
 }

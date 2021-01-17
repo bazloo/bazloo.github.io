@@ -6,10 +6,11 @@ import * as axios from 'axios';
 
 class QuotesBoxContainer extends React.Component {
     
+
     componentDidMount() {
       axios.get('https://api.quotable.io/random').then(response => {
       this.props.generateNewQuote(response.data);
-
+      
     });
     };
     getNewQuote = () => {
@@ -18,9 +19,9 @@ class QuotesBoxContainer extends React.Component {
 
     });
     };
-    makeTweet = () => {}
-    
-    render() { return <QuotesBox {...this.props} getNewQuote={this.getNewQuote}/>};
+        
+    render() { 
+      return <QuotesBox {...this.props} getNewQuote={this.getNewQuote} />};
 };
 
 let mapStateToProps = (state) => {return {newQuote: state.newQuote}};

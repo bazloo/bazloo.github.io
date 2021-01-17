@@ -1,20 +1,26 @@
 .text {
-    display: block;
-    position: relative;
-    height: 50%;
-    width: 90%;
     
-    background-color: rgb(174, 254, 255);
-    margin: 5% auto;
+    position: relative;
+    height: 60%;
+    width: 90%;
+    text-align: justify;
+    background-color: rgb(206, 190, 177);
+    margin: auto auto;
     text-align: center;
     
     
 }
-
+.conten{
+   
+    position: relative;
+    top: 1vw;
+    margin-bottom: 1vw;
+}
 .author{
-    display: block;
+    
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 0.5vw;
+    
+    right: 1vw;
     
 }

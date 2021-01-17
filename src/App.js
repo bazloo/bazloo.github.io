@@ -5,7 +5,8 @@ import QuotesBoxContainer from './components/quotesBox/quotesBox-container';
 
 
 function App() {
-  return (  
+  return (
+    
     <QuotesBoxContainer />
   );
 }
