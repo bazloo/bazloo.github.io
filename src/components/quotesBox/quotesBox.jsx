@@ -4,15 +4,17 @@ import TextArea from '../textArea/textArea.jsx';
 import style from './quotesBox.module.css';
 
 const QuotesBox = (props) => {
-    
+           
     let quoteLength = props.newQuote.newQuote.length;
-    let correctHeight = {height: "18.5vw"};  
-    if(quoteLength < 70){correctHeight.height = "18.5vw"}
-    else if(quoteLength > 70){correctHeight.height = "22vw"}
-    else if(quoteLength > 150){correctHeight.height = "24vw"}
-    else if(quoteLength > 210){correctHeight.height = "24vw"}
+    let heightAndColor = {height: "18.5vw", ...props.newQuote.actualBackgroundCollor }; 
+    
+    if(quoteLength < 70){heightAndColor.height = "18.5vw"}
+    else if(quoteLength > 90){heightAndColor.height = "22vw"}
+    else if(quoteLength > 150){heightAndColor.height = "24vw"}
+    else if(quoteLength > 210){heightAndColor.height = "26vw"}
+    
     return (
-        <div className={style.wrapper} style={correctHeight}>
+        <div className={style.wrapper} style={heightAndColor}>
             
             <TextArea author={props.newQuote.newQuote.author} content={props.newQuote.newQuote.content} />
             <div className={style.btnWrapper}>
