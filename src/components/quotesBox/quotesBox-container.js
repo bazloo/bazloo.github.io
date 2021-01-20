@@ -26,7 +26,7 @@ class QuotesBoxContainer extends React.Component {
     };
         
     render() { 
-      return <QuotesBox {...this.props} getNewQuote={this.getNewQuote} />};
+      return (<QuotesBox {...this.props} getNewQuote={this.getNewQuote} />)};
 };
 
 let mapStateToProps = (state) => {return {newQuote: state.newQuote}};
